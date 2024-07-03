@@ -2,4 +2,4 @@
 void Sub::Minus()
 {
 	c = a - b;
-}
+}
