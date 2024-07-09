@@ -1,13 +1,18 @@
+#ifndef FIGURE_H
+#define FIGURE_H
 #include <iostream>
-//基本となる図形クラス
-
-//クラスを宣言
-class Figure
-{
+class Figure {
 protected:
-	float teihen, takasa, menseki;
+    float teihen, takasa, menseki;
 public:
-	void SetTeihen(float f);
-	void SetTakasa(float f);
-	void Disp();
+    void SetTeihen(float f) {
+        teihen = f;
+    }
+    void SetTakasa(float f) {
+        takasa = f;
+    }
+    void Disp() {
+        std::cout << "面積: " << menseki << std::endl;
+    }
 };
+#endif // FIGURE_H

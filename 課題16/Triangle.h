@@ -1,13 +1,10 @@
-/*
-Triangle.h
-TriangleClass クラスを宣言
-*/
-
-#include "figure.h"
-
-//クラスを宣言
-class Triangle : public Figure
-{
+#ifndef TRIANGLE_H
+#define TRIANGLE_H
+#include "Figure.h"
+class Triangle : public Figure {
 public:
-	void Calc();
+    void Calc() {
+        menseki = (teihen * takasa) / 2;
+    }
 };
+#endif // TRIANGLE_H

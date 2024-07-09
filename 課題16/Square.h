@@ -1,12 +1,10 @@
-/*
-Square.h
-SquareClass クラスを宣言
-*/
-
-#include "figure.h"
-//クラスを宣言
-class Square : public Figure
-{
+#ifndef SQUARE_H
+#define SQUARE_H
+#include "Figure.h"
+class Square : public Figure {
 public:
-	void Calc();
+    void Calc() {
+        menseki = teihen * takasa;
+    }
 };
+#endif // SQUARE_H
