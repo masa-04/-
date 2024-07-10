@@ -24,7 +24,7 @@ int main()
 void SetData()
 {
 	//全員分のデータ（適当に）
-	char* name[] = { "太郎","花子","次郎","良子","吾郎" }; //名前
+	const char* name[] = { "太郎","花子","次郎","良子","吾郎" }; //名前
 	float height[] = { 1.72f, 1.63f, 1.85f, 1.56f, 1.77f }; //身長
 	float weight[] = { 68.2f, 55.6f, 92.5f, 63.3f, 50.1f }; //体重
 	//アクセス関数を使って全員分のデータを渡す
@@ -35,8 +35,7 @@ void SetData()
 		human[i].SetWeight(weight[i]);
 	}
 }
-- 26 -
-C++実習課題
+
 //全員分の BMI を計算
 void BmiCalc()
 {
@@ -69,4 +68,4 @@ void Output()
 	{
 		human[i].Disp();
 	}
-}
+}
